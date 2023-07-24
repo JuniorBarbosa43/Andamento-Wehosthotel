@@ -1,0 +1,345 @@
+  /* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Cores */
+  :root {
+    --primary-color: #6A0572; /* Roxo */
+    --secondary-color: #FFC107; /* Amarelo */
+  }
+  
+  body {
+    background-color: var(--secondary-color);
+    color: #fff;
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    padding: 10px 0;
+  }
+  
+  .logo {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .menu li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #hero {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  #hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  #about,.carousel, .container,
+  #amenities {
+    padding: 80px 0;
+  }
+  
+  #about h2,
+  #rooms h2,
+  #amenities h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+ 
+  
+  .slide {
+    flex: 0 0 auto;
+    width: 80%;
+    margin: 0 auto;
+    scroll-snap-align: start;
+  }
+  
+  .slide img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .slide h3 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+  }
+  
+  .parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #amenities ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+.carousel {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: thin; /* Estiliza a largura da barra de rolagem */
+    scrollbar-color: var(--primary-color) transparent; /* Estiliza a cor da barra de rolagem */
+  }
+  
+  .carousel::-webkit-scrollbar {
+    width: 6px; /* Define a largura da barra de rolagem */
+  }
+  
+  .carousel::-webkit-scrollbar-track {
+    background-color: transparent; /* Define a cor do plano de fundo da barra de rolagem */
+  }
+  
+  .carousel::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color); /* Define a cor da barra de rolagem */
+    border-radius: 3px; /* Define o raio dos cantos da barra de rolagem */
+  }
+  
+  
+  .slide {
+    flex: 0 0 auto;
+    width: 80%;
+    margin: 0 10px; /* Adiciona um pequeno espaçamento entre os slides */
+    scroll-snap-align: start;
+   
+    transition: opacity 0.3s ease-in-out;
+    text-align: center; /* Centraliza verticalmente */
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  .slide .benefit {
+    max-width: 300px; /* Limita a largura do benefício para evitar que fiquem muito largos */
+    margin: 0 auto; /* Centraliza horizontalmente */
+  }
+  
+  /* Estilos para o rodapé */
+footer {
+    background-color: #8B008B;
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  
+  .footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .copy {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  /* Estilos para o carrossel de benefícios */
+#benefits .carousel {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #benefits .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  #benefits .slide {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 20px;
+  }
+  
+  #benefits .slide .benefit {
+    text-align: center;
+  }
+  
+  #benefits .slide .benefit i {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #8B008B;
+  }
+  
+  #benefits .slide h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  #benefits .slide p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  #benefits .prev,
+  #benefits .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #8B008B;
+    color: #fff;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #benefits .prev:hover,
+  #benefits .next:hover {
+    background-color: #800080;
+  }
+  
+  #benefits .prev {
+    left: 10px;
+  }
+  
+  #benefits .next {
+    right: 10px;
+  }
+  
+
+  /* Estilos para a tabela de preços */
+/* Estilos para a tabela de preços */
+#prices .price-table {
+    display: flex;
+    justify-content: center;
+    background-color : #f7f7f7; /* Adicione a cor de fundo desejada */
+    padding: 50px 0; /* Adicione espaçamento interno desejado */
+  }
+  
+  #prices .price-column {
+    flex: 0 0 33.33%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Resto dos estilos permanecem os mesmos */
+  
+  
+  #prices h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  #prices .price {
+    font-size: 36px;
+    color: #8B008B;
+    margin-bottom: 20px;
+  }
+  
+  #prices .currency {
+    font-size: 20px;
+    vertical-align: middle;
+  }
+  
+  #prices .amount {
+    font-size: 36px;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+  
+  #prices .period {
+    font-size: 18px;
+    vertical-align: middle;
+  }
+  
+  #prices .features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  #prices .features li {
+    margin-bottom: 5px;
+  }
+  
+  #prices .contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8B008B;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #prices .contact-button:hover {
+    background-color: #800080;
+  }
+  

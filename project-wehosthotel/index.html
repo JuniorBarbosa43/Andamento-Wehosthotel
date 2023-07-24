@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeHost Hotel - Bauru, SP</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <a href="#" class="logo">WeHost Hotel</a>
+        <ul class="menu">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#rooms">Quartos</a></li>
+          <li><a href="#amenities">Comodidades</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="container">
+      <h1>Bem-vindo ao WeHost Hotel em Bauru, SP</h1>
+      <p>Experimente o conforto e a hospitalidade brasileira.</p>
+      <a href="#contact" class="btn">Reserve agora</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>Sobre o WeHost Hotel</h2>
+      <p>O WeHost Hotel é um refúgio luxuoso localizado em Bauru, São Paulo. Oferecemos aos nossos hóspedes a combinação perfeita de conforto, sofisticação e autenticidade brasileira. Com vistas deslumbrantes e instalações de primeira classe, estamos prontos para tornar sua estadia inesquecível.</p>
+    </div>
+  </section>
+
+  <section id="rooms">
+    <div class="container">
+      <h2>Nossos Quartos</h2>
+        <div class="slide">
+          <img src="all-accor-quarto-de-hotel-de-luxo-em-casa-sofitel-7942.jpg" alt="Quarto Luxo">
+          <h3>Quarto Luxo</h3>
+          <p>Desfrute de uma estadia relaxante em nossos quartos luxuosos. Com decoração elegante, camas confortáveis e vistas deslumbrantes, nossos quartos são projetados para garantir o máximo conforto.</p>
+        </div>
+        <div class="slide">
+          <img src="all-accor-quarto-de-hotel-de-luxo-em-casa-sofitel-7942.jpg" alt="Quarto Família">
+          <h3>Quarto Família</h3>
+          <p>Perfeito para famílias, nossos quartos familiares espaçosos oferecem acomodações confortáveis para todos. Comodidades modernas e decoração aconchegante tornam sua estadia memorável.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="benefits">
+    <div class="container">
+      <div class="carousel">
+        <div class="carousel-inner">
+          <div class="slide active">
+            <div class="benefit">
+              <i class="fas fa-wifi"></i>
+              <h3>Wi-Fi gratuito</h3>
+              <p>Aproveite a conexão de internet de alta velocidade em todo o hotel.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="benefit">
+              <i class="fas fa-utensils"></i>
+              <h3>Restaurante 24 horas</h3>
+              <p>Saboreie deliciosas refeições a qualquer hora do dia ou da noite.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="benefit">
+              <i class="fas fa-swimming-pool"></i>
+              <h3>Piscina</h3>
+              <p>Relaxe e se refresque em nossa bela piscina ao ar livre.</p>
+            </div>
+          </div>
+          <!-- Adicione mais benefícios conforme necessário -->
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="prices">
+    <div class="container">
+      <div class="price-table">
+        <div class="price-column">
+          <h3>Plano Básico</h3>
+          <div class="price">
+            <span class="currency">R$</span>
+            <span class="amount">99</span>
+            <span class="period">/noite</span>
+          </div>
+
+          <a href="contact.html" class="contact-button">Entrar em contato</a>
+        </div>
+        <div class="price-column">
+          <h3>Plano Intermediário</h3>
+          <div class="price">
+            <span class="currency">R$</span>
+            <span class="amount">199</span>
+            <span class="period">/noite</span>
+          </div>
+
+          <a href="contact.html" class="contact-button">Entrar em contato</a>
+        </div>
+        <div class="price-column">
+          <h3>Plano Premium</h3>
+          <div class="price">
+            <span class="currency">R$</span>
+            <span class="amount">299</span>
+            <span class="period">/noite</span>
+          </div>
+
+          <a href="contact.html" class="contact-button">Entrar em contato</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3>Localização</h3>
+          <div id="map"></div>
+        </div>
+        <div class="footer-column">
+          <h3>Contato</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Endereço: Rua Exemplo, 123, Bauru-SP</li>
+            <li><i class="fas fa-phone"></i> Telefone: (11) 1234-5678</li>
+            <li><i class="fas fa-envelope"></i> Email: info@wehosthotel.com</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Redes Sociais</h3>
+          <ul class="social-icons">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copy">&copy; 2023 WeHost Hotel. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  
+
+
+  
+</body>
+</html>
+
